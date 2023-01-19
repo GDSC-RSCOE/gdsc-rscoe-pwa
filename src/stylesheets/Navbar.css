@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Google+Sans:400,500,700);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+}
+.anchor-link {
+    text-decoration: none;
+    color: inherit;
+}
+body,
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body {
+    color: #464646;
+}
+ul {
+    list-style: none;
+}
+.logo {
+    width: 3rem;
+    padding: 0;
+}
+.logo-text {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0;
+}
+.logo-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0rem;
+}
+.flex-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+    border-bottom: 1px solid #e9e8e8;
+    box-shadow: 10px 30px 200px -39px #0b0b0b;
+}
+.menu ul li {
+    transition: .2s;
+    border-bottom: 0.3rem solid rgba(255,255,255,0);
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0.4rem;
+}
+.menu ul li:hover {
+    border-bottom: 0.3rem solid #0961e6;
+}
+.menu ul {
+    margin-right: 1rem;
+}
+.routing-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+}
