@@ -20,7 +20,9 @@ html {
 body {
     color: #464646;
 }
-
+html::-webkit-scrollbar {
+    display: none;
+}
 .up-foot {
     display: flex;
     justify-content: left;

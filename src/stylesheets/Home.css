@@ -20,7 +20,9 @@ html {
 body {
     color: #464646;
 }
-
+html::-webkit-scrollbar {
+    display: none;
+}
 .head {
     font-weight: 500;
     font-size: 2rem;

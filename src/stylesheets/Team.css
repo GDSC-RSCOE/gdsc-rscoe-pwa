@@ -20,7 +20,9 @@ html {
 body {
     color: #464646;
 }
-
+html::-webkit-scrollbar {
+    display: none;
+}
 .team-head {
     font-size: 2.5rem;
     font-weight: bolder;
