@@ -2,7 +2,7 @@ import React from "react";
 import "../stylesheets/Home.css";
 
 const Home = () => {
-  
+  document.title = "GDSC RSCOE"
   return (
     <>
       <div class="home">

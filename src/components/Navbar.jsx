@@ -5,26 +5,26 @@ import { BsCaretDownFill } from "react-icons/bs";
 import { useState } from "react";
 
 const Navbar = () => {
+  const [show, setShow] = useState(false);
+  let style = "down-arrow";
 
-  const [show, setShow] = useState(false)
-  let style = "down-arrow"
-
-  if(show) {
-    style = "after-click"
+  if (show) {
+    style = "after-click";
   } else {
-    style = "down-arrow"
+    style = "down-arrow";
   }
 
   return (
     <div className="flex-navbar">
-      <div className="logo-div">
+      <Link className="anchor-link logo-div" to="/">
         <img
           className="logo"
           src="./images/gdsc-favicon.png"
           alt="gdsc favicon"
         />
         <p className="logo-text">GDSC RSCOE</p>
-      </div>
+      </Link>
+
       <div className="menu">
         <ul className="routing-flex">
           <Link className="anchor-link" to="/">
@@ -34,21 +34,24 @@ const Navbar = () => {
             <li>About</li>
           </Link>
           <div className="dropdown">
-            <button className="dropbtn" onClick={() => {
-              setShow(!show)
-            }}>
-              Events
-              {" "}
-              <BsCaretDownFill className={style} fontSize={"1.2rem"}></BsCaretDownFill>
+            <button
+              className="dropbtn"
+              onClick={() => {
+                setShow(!show);
+              }}
+            >
+              Events{" "}
+              <BsCaretDownFill
+                className={style}
+                fontSize={"1.2rem"}
+              ></BsCaretDownFill>
             </button>
-            {show ? <div className="dropdown-content">
-              <Link to="/upcoming">
-                Upcoming Events
-              </Link>
-              <Link to="/past">
-                Past Events
-              </Link>
-            </div> : null}
+            {show ? (
+              <div className="dropdown-content">
+                <Link to="/upcoming">Upcoming Events</Link>
+                <Link to="/past">Past Events</Link>
+              </div>
+            ) : null}
           </div>
           <Link className="anchor-link" to="/team">
             <li>Team</li>

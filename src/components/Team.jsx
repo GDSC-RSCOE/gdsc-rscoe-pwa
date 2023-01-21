@@ -2,6 +2,7 @@ import React from "react";
 import TeamMembers from "./TeamMembers";
 
 const Team = () => {
+  document.title = "Our Team"
   return (
     <div>
       <div className="team-div-big">

@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Google+Sans:400,500,700);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body,
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+body {
+    color: #464646;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+.events-head {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding-top: 3rem;
+    text-align: center;
+    background-color: #ebf2fb;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem 12rem 6rem;
+    background-color: #ebf2fb;
+}
+.card-container > * {
+    flex-basis: 29%;
+}
+.event-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0.05rem solid #d5d5d5;
+    border-radius: 1rem;
+    height: 25rem;
+    transition: 0.5s;
+    width: 20rem;
+    background: #fff;
+}
+.event-card:hover {
+    box-shadow: 2px 2px 35px 3px #bcbcbc;
+    transform: translateY(-0.3rem);
+}
+.event-card-name {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.card-domain {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    text-align: center;
+}
+.details-btn,
+.details-btn:active,
+.details-btn:hover {
+  outline: 0;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+.details-btn,
+.details-btn:active {
+  border: 0.1rem solid #0073d7;
+  background-color: inherit;
+  border-radius: 0.2rem;
+}
+.details-btn:active {
+    box-shadow: 2px 2px 25px 2px #dadada;
+}
+.details-btn:hover {
+    transition: 0.5s;
+    border: 0.1rem solid #0073d7;
+    border-radius: 0.2rem;
+    background-color: #0073d7;
+    color: #fff;
+}
+#android,
+#blockchain,
+#info {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem 1rem 0 0;
+  margin: 0;
+  padding: 0;
+}
+#blockchain {
+  background-image: url("../../public/images/lumos.png");
+}
+#android {
+  background-image: url("../../public/images/android.jpeg");
+}
+#info {
+  background-image: url("../../public/images/info.jpeg");
+}
