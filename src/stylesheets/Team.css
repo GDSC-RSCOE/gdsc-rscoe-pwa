@@ -39,7 +39,7 @@ html::-webkit-scrollbar {
     flex-direction: column;
     border: 0.05rem solid #d5d5d5;
     border-radius: 1rem;
-    width: 15rem;
+    width: 20rem;
     height: 21rem;
     background: #fff;
 }
