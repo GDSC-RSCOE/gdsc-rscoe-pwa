@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Google+Sans:400,500,700);
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Google Sans', cursive;
+  }
+  
+  .heading {
+    text-align: center;
+  }
+  
+  .message-img {
+    width: 72px;
+    height: 44px;
+    margin-bottom: 7px;
+  }
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    
+  }
+  
+  input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 28rem;
+  }
+  
+  .btn {
+    background-color:  #1e6ae6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 67px;
+    cursor: pointer;
+  }
+  input::placeholder {
+    text-align: left;
+  }
+  
+  
