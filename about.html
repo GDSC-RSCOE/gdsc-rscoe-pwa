@@ -1,254 +1,214 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="./images/gdsc-favicon.png" />
-    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
-
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <title>About us</title>
-</head>
-
-<body onload="hideLoad()">
-    <div class="overflow white" id="preload">
-        <div class="circle-line">
-            <div class="circle-red">&nbsp;</div>
-            <div class="circle-blue">&nbsp;</div>
-            <div class="circle-green">&nbsp;</div>
-            <div class="circle-yellow">&nbsp;</div>
+ <div>
+        <div className="overflow white" id="preload">
+          <div className="circle-line">
+            <div className="circle-red">&nbsp;</div>
+            <div className="circle-blue">&nbsp;</div>
+            <div className="circle-green">&nbsp;</div>
+            <div className="circle-yellow">&nbsp;</div>
+          </div>
         </div>
-    </div>
-    <div class="big-container-about">
-        <header class="header">
-            <nav class="navbar">
-                <div data-aos="fade-down" data-aos-delay="500" class="logo-div">
-                    <a href="./index.html">
-                        <img class="logo" src="./images/gdsc-favicon.png" />
-                        <p class="logo-text">GDSC RSCOE</p>
-                    </a>
-                </div>
-                <div class="menu">
-                    <ul class="nav-menu">
-                        <a href="index.html">
-                            <li>Home</li>
-                        </a>
-
-                        <a href="about.html">
-                            <li>About</li>
-                        </a>
-
-                        <div class="dropdown">
-                            <button class="dropbtn">
-                                Events
-                                <i style="font-size: 0.9rem" id="drop-down-icon" class="bx bxs-down-arrow"></i>
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="upcoming.html">Tech I/O'22</a>
-                                <a href="past.html">Past Events</a>
-                            </div>
-                        </div>
-                        <a href="team.html">
-                            <li>Team</li>
-                        </a>
-                    </ul>
-                </div>
-
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+        <div className="big-container-about">
+          <header className="header">
+            <nav className="navbar">
+              <div data-aos="fade-down" data-aos-delay={500} className="logo-div">
+                <a href="./index.html">
+                  <img className="logo" src="./images/gdsc-favicon.png" />
+                  <p className="logo-text">GDSC RSCOE</p>
+                </a>
+              </div>
+              <div className="menu">
+                <ul className="nav-menu">
+                  <a href="index.html">
+                    <li>Home</li>
+                  </a>
+                  <a href="about.html">
+                    <li>About</li>
+                  </a>
+                  <div className="dropdown">
+                    <button className="dropbtn">
+                      Events
+                      <i style={{fontSize: '0.9rem'}} id="drop-down-icon" className="bx bxs-down-arrow" />
+                    </button>
+                    <div className="dropdown-content">
+                      <a href="upcoming.html">Tech I/O'22</a>
+                      <a href="past.html">Past Events</a>
+                    </div>
+                  </div>
+                  <a href="team.html">
+                    <li>Team</li>
+                  </a>
+                </ul>
+              </div>
+              <div className="hamburger">
+                <span className="bar" />
+                <span className="bar" />
+                <span className="bar" />
+              </div>
             </nav>
-        </header>
-
-        <div class="about-main">
-            <div class="left-side">
-                <p class="head">Google Developer Student Clubs JSPM RSCOE</p>
-                <br />
-                <p class="tech-io-info">
-                    Google Developer Student Clubs are university based community groups
-                    for students interested in Google developer technologies. Students
-                    from all undergraduate or graduate programs with an interest in
-                    growing as a developer are welcome. By joining a GDSC, students grow
-                    their knowledge in a peer-to-peer learning environment and build
-                    solutions for local businesses and their community.
-                </p>
-                <a href="https://bit.ly/join-gdsc-rscoe" target="_blank"><button class="book" id="deets">Join
-                        us</button></a>
+          </header>
+          <div className="about-main">
+            <div className="left-side">
+              <p className="head">Google Developer Student Clubs JSPM RSCOE</p>
+              <br />
+              <p className="tech-io-info">
+                Google Developer Student Clubs are university based community groups
+                for students interested in Google developer technologies. Students
+                from all undergraduate or graduate programs with an interest in
+                growing as a developer are welcome. By joining a GDSC, students grow
+                their knowledge in a peer-to-peer learning environment and build
+                solutions for local businesses and their community.
+              </p>
+              <a href="https://bit.ly/join-gdsc-rscoe" target="_blank"><button className="book" id="deets">Join
+                  us</button></a>
             </div>
-            <div class="right-side">
-                <img class="about-vector" src="./images/rscoe-vector.svg" />
+            <div className="right-side">
+              <img className="about-vector" src="./images/rscoe-vector.svg" />
             </div>
+          </div>
         </div>
-    </div>
-    <h3 class="technologies-head">Technologies</h3>
-
-    <div class="tech-container">
-        <div>
-            <div class="tech-flex-1">
-                <div data-aos="fade-zoom-in" class="tech-card">
-                    <img class="tech-img" src="images/appDevelopment.png" alt="Avatar" style="width: 100%" />
-                    <div class="container">
-                        <h4 class="techNames"><b>Android</b></h4>
-                        <div class="techDescription">
-                            <p>
-                                Are you interested in developing your own apps? Every year,
-                                Google Developers releases updates to the Android operating
-                                system, which is one of the most popular in the world. We
-                                offer resources and study materials for various programming
-                                languages used in Android app development to help you stay
-                                up-to-date with the latest trends.
-                            </p>
-                        </div>
-                    </div>
+        <h3 className="technologies-head">Technologies</h3>
+        <div className="tech-container">
+          <div>
+            <div className="tech-flex-1">
+              <div data-aos="fade-zoom-in" className="tech-card">
+                <img className="tech-img" src="images/appDevelopment.png" alt="Avatar" style={{width: '100%'}} />
+                <div className="container">
+                  <h4 className="techNames"><b>Android</b></h4>
+                  <div className="techDescription">
+                    <p>
+                      Are you interested in developing your own apps? Every year,
+                      Google Developers releases updates to the Android operating
+                      system, which is one of the most popular in the world. We
+                      offer resources and study materials for various programming
+                      languages used in Android app development to help you stay
+                      up-to-date with the latest trends.
+                    </p>
+                  </div>
                 </div>
-
-                <div  class="tech-card">
-                    <img class="tech-img" src="images/webDev.png" alt="Avatar" style="width: 100%" />
-                    <div class="container">
-                        <h4 class="techNames"><b>Web</b></h4>
-                        <div class="techDescription">
-                            <p>
-                                Web development is the art of crafting and maintaining
-                                websites, utilizing the latest technologies to create a
-                                seamless user experience by seamlessly integrating the
-                                frontend and backend. Join us to gain access to expert
-                                tutorials and hands-on coding experience, empowering you to
-                                become a master of web development..
-                            </p>
-                        </div>
-                    </div>
+              </div>
+              <div className="tech-card">
+                <img className="tech-img" src="images/webDev.png" alt="Avatar" style={{width: '100%'}} />
+                <div className="container">
+                  <h4 className="techNames"><b>Web</b></h4>
+                  <div className="techDescription">
+                    <p>
+                      Web development is the art of crafting and maintaining
+                      websites, utilizing the latest technologies to create a
+                      seamless user experience by seamlessly integrating the
+                      frontend and backend. Join us to gain access to expert
+                      tutorials and hands-on coding experience, empowering you to
+                      become a master of web development..
+                    </p>
+                  </div>
                 </div>
-
-                <div class="tech-card">
-                    <img class="tech-img" src="images/AI_Ml.png" alt="Avatar" style="width: 100%" />
-                    <div class="container">
-                        <h4 class="techNames"><b>AI & ML</b></h4>
-                        <div class="techDescription">
-                            <p>
-                                Unlock the power of intelligent app development and learn how
-                                to create apps that drive user engagement and retention by
-                                automatically adapting and improving. Join our program and
-                                master the art of providing users with seamless, fuss-free
-                                experiences through the power of machine learning. Elevate
-                                your AI-ML skills and set yourself apart in the
-                                digital world.
-                            </p>
-                        </div>
-                    </div>
+              </div>
+              <div className="tech-card">
+                <img className="tech-img" src="images/AI_Ml.png" alt="Avatar" style={{width: '100%'}} />
+                <div className="container">
+                  <h4 className="techNames"><b>AI &amp; ML</b></h4>
+                  <div className="techDescription">
+                    <p>
+                      Unlock the power of intelligent app development and learn how
+                      to create apps that drive user engagement and retention by
+                      automatically adapting and improving. Join our program and
+                      master the art of providing users with seamless, fuss-free
+                      experiences through the power of machine learning. Elevate
+                      your AI-ML skills and set yourself apart in the
+                      digital world.
+                    </p>
+                  </div>
                 </div>
+              </div>
             </div>
-
-            <div  class="tech-flex-2">
-                <div class="tech-card">
-                    <img class="tech-img" src="images/cloudTech.png" alt="Avatar" style="width: 100%" />
-                    <div class="container">
-                        <h4 class="techNames"><b>Cloud</b></h4>
-                        <div class="techDescription">
-                            <p>
-                                Ever wondered where all the data for the services you use
-                                daily, such as sending files, using mobile apps, streaming
-                                shows, and playing video games, is stored? The answer is
-                                Cloud, a vast digital space where all this data is kept. Join
-                                us to unlock the power of the Cloud through our Google Cloud
-                                Programs, with hands-on learning .
-                            </p>
-                        </div>
-                    </div>
+            <div className="tech-flex-2">
+              <div className="tech-card">
+                <img className="tech-img" src="images/cloudTech.png" alt="Avatar" style={{width: '100%'}} />
+                <div className="container">
+                  <h4 className="techNames"><b>Cloud</b></h4>
+                  <div className="techDescription">
+                    <p>
+                      Ever wondered where all the data for the services you use
+                      daily, such as sending files, using mobile apps, streaming
+                      shows, and playing video games, is stored? The answer is
+                      Cloud, a vast digital space where all this data is kept. Join
+                      us to unlock the power of the Cloud through our Google Cloud
+                      Programs, with hands-on learning .
+                    </p>
+                  </div>
                 </div>
-
-                <div  class="tech-card">
-                    <img class="tech-img" src="images/Blockchain.png" alt="Avatar" style="width: 100%" />
-                    <div class="container">
-                        <h4 class="techNames"><b>Blockchain</b></h4>
-                        <div class="techDescription">
-                            <p>
-                                Explore the future of secure, decentralized systems by mastering the art of blockchain
-                                technology. Our program teaches you how to create decentralized applications, smart
-                                contracts and more. Stay ahead of the curve in the rapidly evolving world of blockchain
-                                development by gaining a thorough understanding of the underlying technology.
-                            </p>
-                        </div>
-                    </div>
+              </div>
+              <div className="tech-card">
+                <img className="tech-img" src="images/Blockchain.png" alt="Avatar" style={{width: '100%'}} />
+                <div className="container">
+                  <h4 className="techNames"><b>Blockchain</b></h4>
+                  <div className="techDescription">
+                    <p>
+                      Explore the future of secure, decentralized systems by mastering the art of blockchain
+                      technology. Our program teaches you how to create decentralized applications, smart
+                      contracts and more. Stay ahead of the curve in the rapidly evolving world of blockchain
+                      development by gaining a thorough understanding of the underlying technology.
+                    </p>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <footer>
-        <div class="up-foot">
+        <footer>
+          <div className="up-foot">
             <div>
-                <p>Follow us on :</p>
+              <p>Follow us on :</p>
             </div>
-            <div class="footer-icon-div">
-                <a target="_blank" rel="noreferrer" href="https://linkedin.com/company/gdsc-rscoe/">
-                    <i class="bx bxl-linkedin-square" style="color: #0088ff; font-size: 1.7rem"></i></a>
-                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/gdsc_rscoe/?hl=en">
-                    <i class="bx bxl-instagram" style="color: #ff0071; font-size: 1.7rem"></i></a>
-                <a target="_blank" rel="noreferrer" href="https://twitter.com/gdsc_rscoe">
-                    <i class="bx bxl-twitter" style="color: #007eff; font-size: 1.7rem"></i></a>
-                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UC1607i_UbWguPIUnNacWQtw"><i
-                        class="bx bxl-youtube" style="color: #ff0000; font-size: 1.7rem"></i></a>
+            <div className="footer-icon-div">
+              <a target="_blank" rel="noreferrer" href="https://linkedin.com/company/gdsc-rscoe/">
+                <i className="bx bxl-linkedin-square" style={{color: '#0088ff', fontSize: '1.7rem'}} /></a>
+              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/gdsc_rscoe/?hl=en">
+                <i className="bx bxl-instagram" style={{color: '#ff0071', fontSize: '1.7rem'}} /></a>
+              <a target="_blank" rel="noreferrer" href="https://twitter.com/gdsc_rscoe">
+                <i className="bx bxl-twitter" style={{color: '#007eff', fontSize: '1.7rem'}} /></a>
+              <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UC1607i_UbWguPIUnNacWQtw"><i className="bx bxl-youtube" style={{color: '#ff0000', fontSize: '1.7rem'}} /></a>
             </div>
-        </div>
-        <br />
-        <hr />
-
-        <div class="bottom-footer">
-            <div class="down-foot">
-                <p style="font-size: 1.2rem; font-weight: bold">Contact us</p>
-                <a href="mailto:gdsc@jspmrscoe.edu.in">
-                    <p class="quick-links">gdsc@jspmrscoe.edu.in</p>
-                </a>
+          </div>
+          <br />
+          <hr />
+          <div className="bottom-footer">
+            <div className="down-foot">
+              <p style={{fontSize: '1.2rem', fontWeight: 'bold'}}>Contact us</p>
+              <a href="mailto:gdsc@jspmrscoe.edu.in">
+                <p className="quick-links">gdsc@jspmrscoe.edu.in</p>
+              </a>
             </div>
-
-            <div class="down-foot">
-                <p style="font-size: 1.2rem; font-weight: bold">Resources</p>
-                <a href="mailto:gdsc@jspmrscoe.edu.in">
-                    <p class="quick-links">Become a Sponsor</p>
-                </a>
+            <div className="down-foot">
+              <p style={{fontSize: '1.2rem', fontWeight: 'bold'}}>Resources</p>
+              <a href="mailto:gdsc@jspmrscoe.edu.in">
+                <p className="quick-links">Become a Sponsor</p>
+              </a>
             </div>
-
-            <div class="down-foot">
-                <p style="font-size: 1.2rem; font-weight: bold; padding: 0.3rem">
-                    Developer Consoles
-                </p>
-                <a target="_blank" rel="noreferrer"
-                    href="https://console.cloud.google.com/projectselector2/apis/dashboard?supportedpurview=project">
-                    <p class="quick-links">Google API Console</p>
-                </a>
-                <a target="_blank" rel="noreferrer" href="https://console.firebase.google.com/u/0/">
-                    <p class="quick-links">Firebase Console</p>
-                </a>
-                <a target="_blank" rel="noreferrer" href="https://console.cloud.google.com/getting-started">
-                    <p class="quick-links">Google Cloud Platform Console</p>
-                </a>
+            <div className="down-foot">
+              <p style={{fontSize: '1.2rem', fontWeight: 'bold', padding: '0.3rem'}}>
+                Developer Consoles
+              </p>
+              <a target="_blank" rel="noreferrer" href="https://console.cloud.google.com/projectselector2/apis/dashboard?supportedpurview=project">
+                <p className="quick-links">Google API Console</p>
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://console.firebase.google.com/u/0/">
+                <p className="quick-links">Firebase Console</p>
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://console.cloud.google.com/getting-started">
+                <p className="quick-links">Google Cloud Platform Console</p>
+              </a>
             </div>
-
-            <div class="down-foot">
-                <p class="quick-links">&copy; 2022 All Rights Reserved</p>
-                <p class="quick-links">&nbsp; GDSC RSCOE</p>
+            <div className="down-foot">
+              <p className="quick-links">© 2022 All Rights Reserved</p>
+              <p className="quick-links">&nbsp; GDSC RSCOE</p>
             </div>
-        </div>
-        <div class="foot-logo-div">
-            <img class="foot-logo" src="./images/gdsc main.png" />
-        </div>
-
-        <p class="credit">
-            Designed & Developed with ❤️ by GDSC RSCOE
+          </div>
+          <div className="foot-logo-div">
+            <img className="foot-logo" src="./images/gdsc main.png" />
+          </div>
+          <p className="credit">
+            Designed &amp; Developed with ❤️ by GDSC RSCOE
             <a href="webteam.html"><span>Web Team</span></a>
-        </p>
-    </footer>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>    
-   <script src="./script.js"></script>
-   <script type="module" src="./firebase.js"></script>
-    
-</body>
-
-</html>
+          </p>
+        </footer>
+      </div>
