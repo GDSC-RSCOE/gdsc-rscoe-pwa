@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Google+Sans:400,500,700);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body,
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+body {
+    color: #464646;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+.head {
+    font-weight: 500;
+    font-size: 2rem;
+}
+.tech-io-info {
+    font-size: 1.2rem;
+}
+.about-vector {
+    width: 80%;
+}
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.left-side {
+    margin-left: 10rem;
+    width: 53%;
+}
+.join {
+    margin: 1.3rem 0;
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-color: #0075ec;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+.perk-head {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    font-size: 1.78rem;
+    text-align: center;
+    border-bottom: 0.3rem solid #0961e6;
+    padding-bottom: 8px;
+}
+.clg-container {
+    display: flex;
+    flex-direction: column;
+}
+.c-container, .g-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+.l-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px;
+}
+.head-2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+.clg-para {
+    line-height: 2rem;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+.c-img, .g-img, .l-img {
+    border: 0.07rem solid #d5d5d5;
+    border-radius: 1rem;
+    transition: .5s;
+    width: 325px;
+}
+.c-img:hover,
+.g-img:hover,
+.l-img:hover {
+  box-shadow: 2px 2px 35px 3px #bcbcbc;
+  transform: translateY(-0.3rem);
+}
+.c-info,
+.g-info {
+  width: 50%;
+  margin-right: 75px;
+}
+.l-info {
+  width: 50%;
+  margin-left: 75px;
+}

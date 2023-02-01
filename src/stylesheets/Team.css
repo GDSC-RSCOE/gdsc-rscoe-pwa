@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Google+Sans:400,500,700);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body,
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+body {
+    color: #464646;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+.team-head {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding-top: 3rem;
+    text-align: center;
+    background-color: #f9f7f6;
+}
+.card {
+    margin: 0;
+    transition: 0.5s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: 0.05rem solid #d5d5d5;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 21rem;
+    background: #fff;
+}
+.card:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px 21px 45px -15px rgba(191, 191, 191, 0.61);
+    padding: 1.5rem 0;
+    flex-direction: column;
+    background-color: #ff7300;
+    border: 0.1rem solid #d5d5d5;
+    border-radius: 1rem;
+    color: #fff;
+}
+.card-img {
+    border-radius: 50%;
+    width: 10rem;
+    border: 0.2rem solid #1d86f7;
+}
+.card-name {
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.card-domain {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    text-align: center;
+}
+.card-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+.team-members-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: #f9f7f6;
+}
+.team-members-div > * {
+    flex-basis: 22%;
+}
