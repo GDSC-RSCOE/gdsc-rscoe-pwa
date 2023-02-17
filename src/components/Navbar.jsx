@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../stylesheets/Navbar.css";
 import { Link } from "react-router-dom";
 import { BsCaretDownFill } from "react-icons/bs";
@@ -6,6 +6,7 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
+
   let style = "down-arrow";
 
   if (show) {
@@ -13,6 +14,8 @@ const Navbar = () => {
   } else {
     style = "down-arrow";
   }
+
+  const menuRef = useRef();
 
   return (
     <div className="flex-navbar">
@@ -26,7 +29,7 @@ const Navbar = () => {
       </Link>
 
       <div className="menu">
-        <ul className="routing-flex">
+        <ul className="routing-flex" ref={menuRef}>
           <Link className="anchor-link" to="/">
             <li>Home</li>
           </Link>
@@ -60,6 +63,17 @@ const Navbar = () => {
             <li>Contact</li>
           </Link>
         </ul>
+      </div>
+      <div
+        className="hamburger"
+        onClick={(e) => {
+          e.currentTarget.classList.toggle("active");
+          menuRef.current.classList.toggle("active");
+        }}
+      >
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
       </div>
     </div>
   );
